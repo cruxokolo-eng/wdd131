@@ -78,7 +78,7 @@ a {
     height: 48px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(17, 39, 58, 0.45);
     color: #fff;
     font-size: 1.4rem;
     cursor: pointer;
@@ -99,7 +99,7 @@ a {
     display: block;
     padding: 0.75rem 1rem;
     border-radius: 0.6rem;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(17, 39, 58, 0.45);
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -109,7 +109,7 @@ a {
 
 .nav-links a:hover,
 .nav-links a:focus {
-    background: var(--accent);
+    background: var(--header-dark);
     transform: translateY(-1px);
 }
 
