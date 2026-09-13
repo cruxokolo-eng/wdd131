@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Album</title>
+    <meta name="description"
+        content="Temple Album showcasing a responsive gallery of temples with a mobile-first design." />
+    <meta name="author" content="Crux Okolo" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand-block">
+                <p class="eyebrow">WDD 131</p>
+                <h2>Temple Album</h2>
+            </div>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"
+                    aria-label="Toggle navigation menu">
+                    ☰
+                </button>
+
+                <div id="primary-nav" class="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Old</a>
+                    <a href="#">New</a>
+                    <a href="#">Large</a>
+                    <a href="#">Small</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Temple Gallery</h1>
+
+        <div class="gallery">
+            <figure>
+                <img src="images/saltlaketemple.jpeg" alt="Temple of the Church of Jesus Christ of Latter-day Saints" />
+                <figcaption>Temple of the Church of Jesus Christ</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/saltlaketemple.jpeg" alt="Salt Lake Temple" />
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/provotemple.jpeg" alt="Provo Temple" />
+                <figcaption>Provo Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/vernaltemple.jpeg" alt="Vernal Temple" />
+                <figcaption>Vernal Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/mantitemple.jpeg" alt="Manti Temple" />
+                <figcaption>Manti Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/nauvootemple.jpeg" alt="Nauvoo Temple" />
+                <figcaption>Nauvoo Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/idahofallstemple.jpeg" alt="Idaho Falls Temple" />
+                <figcaption>Idaho Falls Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/paysontemple.jpeg" alt="Payson Temple" />
+                <figcaption>Payson Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/tokyojapanTemple.jpeg" alt="Tokyo Japan Temple" />
+                <figcaption>Tokyo Japan Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Crux Okolo | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
