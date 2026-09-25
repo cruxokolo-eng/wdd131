@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtered Temple Gallery</title>
+    <meta name="description" content="Temple gallery with responsive filtering and lazy-loaded temple cards." />
+    <meta name="author" content="Crux Okolo" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/filtered-temples.css" />
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand-block">
+                <p class="eyebrow">WDD 131</p>
+                <h2>Temple Album</h2>
+            </div>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"
+                    aria-label="Toggle navigation menu">
+                    ☰
+                </button>
+
+                <div id="primary-nav" class="nav-links">
+                    <a href="#" data-filter="all">Home</a>
+                    <a href="#" data-filter="old">Old</a>
+                    <a href="#" data-filter="new">New</a>
+                    <a href="#" data-filter="large">Large</a>
+                    <a href="#" data-filter="small">Small</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Temple Gallery</h1>
+        <div id="gallery" class="gallery" aria-live="polite"></div>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Crux Okolo | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
