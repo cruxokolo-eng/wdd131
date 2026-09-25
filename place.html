@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nigeria | Places to Explore</title>
+    <meta name="description"
+        content="A responsive destination page highlighting the beauty, culture, and weather of Nigeria." />
+    <meta name="author" content="Crux Okolo" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <p class="eyebrow">West Africa</p>
+            <h1>Nigeria</h1>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#overview">Overview</a>
+                <a href="#weather">Weather</a>
+                <a href="#culture">Culture</a>
+                <a href="#visit">Plan a Visit</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero" id="overview">
+            <div class="hero-copy">
+                <p class="section-label">Explore the heartbeat of Africa</p>
+                <h2>Vibrant cities, rich culture, and unforgettable landscapes.</h2>
+                <p>
+                    Nigeria blends energetic urban life with deep tradition, stunning coastlines,
+                    and welcoming communities. From the bustling markets of Lagos to the rolling
+                    hills of the interior, every region offers a new story to discover.
+                </p>
+                <div class="quick-facts" aria-label="Quick facts about Nigeria">
+                    <div>
+                        <span>Population</span>
+                        <strong>223M</strong>
+                    </div>
+                    <div>
+                        <span>Language</span>
+                        <strong>English + many local languages</strong>
+                    </div>
+                    <div>
+                        <span>Best for</span>
+                        <strong>Culture, food, and travel</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-media">
+                <picture>
+                    <source media="(max-width: 600px)"
+                        srcset="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=640&q=80 640w, https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80 900w" />
+                    <source media="(min-width: 601px)"
+                        srcset="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=80 1000w, https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1400&q=80 1400w" />
+                    <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
+                        alt="A scenic view of Nigeria with vibrant city life and coastal beauty" />
+                </picture>
+            </div>
+        </section>
+
+        <section class="weather-card" id="weather" aria-labelledby="weather-heading">
+            <div class="weather-header">
+                <h3 id="weather-heading">Weather</h3>
+                <svg class="weather-icon mobile-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path
+                        d="M12 3.5a1 1 0 0 1 1 1v1.1a5.42 5.42 0 0 1 2.5 1.5l.8-.8a1 1 0 1 1 1.41 1.41l-.8.8a5.42 5.42 0 0 1 1.5 2.5h1.1a1 1 0 1 1 0 2h-1.1a5.42 5.42 0 0 1-1.5 2.5l.8.8a1 1 0 0 1-1.41 1.41l-.8-.8a5.42 5.42 0 0 1-2.5 1.5V19a1 1 0 1 1-2 0v-1.1a5.42 5.42 0 0 1-2.5-1.5l-.8.8A1 1 0 1 1 4.6 16.8l.8-.8A5.42 5.42 0 0 1 3.9 13.5H2.8a1 1 0 1 1 0-2h1.1a5.42 5.42 0 0 1 1.5-2.5l-.8-.8A1 1 0 1 1 5.02 6.79l.8.8A5.42 5.42 0 0 1 8.32 5.1V4a1 1 0 0 1 1-1Zm0 6.5A3 3 0 1 0 12 16a3 3 0 0 0 0-6Z"
+                        fill="currentColor" />
+                </svg>
+            </div>
+            <div class="weather-stats">
+                <p>Temperature: <span id="temp-value">48°F</span></p>
+                <p>Wind Speed: <span id="wind-speed">12 mph</span></p>
+                <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+            </div>
+        </section>
+
+        <section class="info-grid" id="culture">
+            <article class="info-card">
+                <h3>Culture</h3>
+                <p>
+                    Nigeria is known for its music, storytelling, textiles, and festivals that bring
+                    communities together in joyful celebration.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h3>Food</h3>
+                <p>
+                    Visitors enjoy jollof rice, suya, egusi soup, and plantain dishes that reflect the
+                    richness of Nigerian cuisine.
+                </p>
+            </article>
+
+            <article class="info-card">
+                <h3>Landscapes</h3>
+                <p>
+                    From coastal beaches and rainforests to highlands and savannas, Nigeria offers a
+                    dramatic range of natural beauty.
+                </p>
+            </article>
+        </section>
+
+        <section class="visit-card" id="visit">
+            <div class="visit-copy">
+                <p class="section-label">Why people love it</p>
+                <h3>Reasons to visit Nigeria</h3>
+                <p>
+                    Nigeria offers a powerful mix of hospitality, creativity, and beauty. It is a place
+                    where vibrant traditions and modern energy create memorable experiences for travelers.
+                </p>
+            </div>
+            <ul class="visit-list">
+                <li>Explore historic markets and cultural centers.</li>
+                <li>Enjoy warm, welcoming communities and local music.</li>
+                <li>Discover scenic beaches and lively city districts.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Crux Okolo | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
