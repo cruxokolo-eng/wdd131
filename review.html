@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Product review submission confirmation." />
+    <meta name="author" content="Crux Okolo" />
+    <title>Review Submitted | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <p class="course-label">WDD 131 <span>·</span> Product feedback</p>
+        <h1>Thank You</h1>
+        <p class="header-note">Your review helps others choose with confidence.</p>
+    </header>
+
+    <main>
+        <section class="confirmation" aria-live="polite">
+            <div id="confirmation-content">
+                <p class="confirmation-kicker">Review received</p>
+                <h2>Your feedback is in.</h2>
+                <p class="review-count">Reviews completed: <strong id="review-count">0</strong></p>
+                <dl class="review-details">
+                    <div>
+                        <dt>Product</dt>
+                        <dd id="review-product"></dd>
+                    </div>
+                    <div>
+                        <dt>Rating</dt>
+                        <dd id="review-rating"></dd>
+                    </div>
+                    <div>
+                        <dt>Installed</dt>
+                        <dd id="review-date"></dd>
+                    </div>
+                    <div>
+                        <dt>Useful features</dt>
+                        <dd id="review-features"></dd>
+                    </div>
+                    <div>
+                        <dt>Your review</dt>
+                        <dd id="review-text"></dd>
+                    </div>
+                    <div>
+                        <dt>Name</dt>
+                        <dd id="review-name"></dd>
+                    </div>
+                </dl>
+                <a class="back-link" href="form.html">Write another review</a>
+            </div>
+            <div id="no-submission" hidden>
+                <p class="confirmation-kicker">No review submitted</p>
+                <h2>Start with the review form.</h2>
+                <p>A completed review will appear here after you submit it.</p>
+                <a class="back-link" href="form.html">Go to the review form</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Crux Okolo | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

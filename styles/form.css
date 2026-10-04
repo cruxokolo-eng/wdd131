@@ -1,0 +1,341 @@
+:root {
+    color-scheme: light;
+    --ink: #193b35;
+    --muted: #536b64;
+    --green: #176b57;
+    --green-dark: #0f5142;
+    --mint: #e6f1eb;
+    --gold: #c77624;
+    --line: #bacdc3;
+    --paper: #fffefa;
+    --canvas: #f2f5ef;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: var(--ink);
+    background: repeating-linear-gradient(135deg, rgba(23, 107, 87, 0.025) 0 1px, transparent 1px 12px), var(--canvas);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.55;
+}
+
+.site-header {
+    padding: 2rem 1rem 1.75rem;
+    color: var(--paper);
+    text-align: center;
+    background: var(--green-dark);
+    border-bottom: 5px solid var(--gold);
+}
+
+.course-label,
+.header-note {
+    margin: 0;
+}
+
+.course-label {
+    color: #d4e8db;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.course-label span {
+    padding: 0 0.35rem;
+    color: #f2c277;
+}
+
+h1,
+h2 {
+    font-family: 'Source Serif 4', Georgia, serif;
+}
+
+.site-header h1 {
+    margin: 0.25rem 0;
+    font-size: 2.35rem;
+    line-height: 1.2;
+}
+
+.header-note {
+    color: #e4eee8;
+}
+
+main {
+    width: min(100% - 2rem, 680px);
+    margin: 2rem auto;
+    flex: 1;
+}
+
+.review-form,
+.confirmation {
+    padding: clamp(1.25rem, 4vw, 2.25rem);
+    background: var(--paper);
+    border: 1px solid #d6e0d9;
+    border-top: 4px solid var(--green);
+    box-shadow: 0 12px 32px rgba(25, 59, 53, 0.09);
+}
+
+.form-field,
+fieldset {
+    margin: 0 0 1.35rem;
+}
+
+.form-field>label,
+legend {
+    display: block;
+    margin-bottom: 0.45rem;
+    color: var(--ink);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.required-note,
+.optional-note {
+    margin-left: 0.35rem;
+    color: var(--muted);
+    font-size: 0.76rem;
+    font-weight: 500;
+}
+
+select,
+input[type='date'],
+input[type='text'],
+textarea {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.7rem 0.8rem;
+    color: var(--ink);
+    background: #fff;
+    border: 1px solid #849c90;
+    border-radius: 3px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 132px;
+    resize: vertical;
+}
+
+select:focus,
+input:focus,
+textarea:focus,
+a:focus-visible {
+    outline: 3px solid #e8ad5d;
+    outline-offset: 2px;
+}
+
+fieldset {
+    min-width: 0;
+    padding: 0;
+    border: 0;
+}
+
+.rating-options {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.4rem;
+}
+
+.rating-option {
+    min-width: 0;
+    text-align: center;
+}
+
+.rating-option input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.rating-option label {
+    display: flex;
+    min-height: 72px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.15rem;
+    padding: 0.35rem 0.15rem;
+    color: #7b4c16;
+    background: #fbf3e5;
+    border: 1px solid #e6d4b7;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.rating-option label>span:first-child {
+    font-size: 1.15rem;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.rating-caption {
+    color: var(--muted);
+    font-size: 0.69rem;
+}
+
+.rating-option input:checked+label {
+    color: #55320c;
+    background: #f5d79f;
+    border-color: var(--gold);
+}
+
+.rating-option input:focus-visible+label {
+    outline: 3px solid var(--green);
+    outline-offset: 2px;
+}
+
+.checkbox-options {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem 1rem;
+    padding: 0.85rem;
+    background: var(--mint);
+    border: 1px solid #c9ddd1;
+    border-radius: 3px;
+}
+
+.check-option {
+    display: flex;
+    min-height: 32px;
+    align-items: center;
+    gap: 0.55rem;
+    cursor: pointer;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    accent-color: var(--green);
+}
+
+input[type='checkbox'] {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 auto;
+}
+
+.submit-button {
+    width: 100%;
+    min-height: 52px;
+    padding: 0.8rem 1rem;
+    color: #fff;
+    background: var(--green);
+    border: 0;
+    border-radius: 3px;
+    font: inherit;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: var(--green-dark);
+}
+
+.confirmation-kicker {
+    margin: 0;
+    color: var(--green);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.confirmation h2 {
+    margin: 0.2rem 0 0.8rem;
+    font-size: 1.8rem;
+}
+
+.review-count {
+    padding: 0.8rem 1rem;
+    background: var(--mint);
+    border-left: 3px solid var(--green);
+}
+
+.review-count strong {
+    color: var(--green-dark);
+    font-size: 1.15rem;
+}
+
+.review-details {
+    margin: 1.2rem 0;
+}
+
+.review-details div {
+    display: grid;
+    grid-template-columns: minmax(120px, 0.8fr) 1.5fr;
+    gap: 1rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #dce5de;
+}
+
+.review-details dt {
+    color: var(--muted);
+    font-weight: 600;
+}
+
+.review-details dd {
+    margin: 0;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+.back-link {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    color: #fff;
+    background: var(--green);
+    border-radius: 3px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer {
+    padding: 1.2rem 1rem;
+    color: #e8f0eb;
+    background: var(--ink);
+    text-align: center;
+    font-size: 0.88rem;
+}
+
+footer p {
+    margin: 0.2rem;
+}
+
+@media (max-width: 460px) {
+    main {
+        width: min(100% - 1.25rem, 680px);
+        margin: 1.1rem auto;
+    }
+
+    .rating-options {
+        gap: 0.25rem;
+    }
+
+    .rating-option label {
+        min-height: 68px;
+    }
+
+    .rating-option label>span:first-child {
+        font-size: 0.95rem;
+    }
+
+    .rating-caption {
+        font-size: 0.62rem;
+    }
+
+    .checkbox-options {
+        grid-template-columns: 1fr;
+    }
+
+    .review-details div {
+        grid-template-columns: 1fr;
+        gap: 0.15rem;
+    }
+}

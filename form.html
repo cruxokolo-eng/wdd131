@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Share your experience with a product you have installed." />
+    <meta name="author" content="Crux Okolo" />
+    <title>Product Review | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/form.css" />
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <p class="course-label">WDD 131 <span>·</span> Product feedback</p>
+        <h1>Product Review</h1>
+        <p class="header-note">Tell us how your installation is working out.</p>
+    </header>
+
+    <main>
+        <form class="review-form" method="get" action="review.html">
+            <input type="hidden" name="submitted" value="1" />
+
+            <div class="form-field">
+                <label for="product">Product Name <span class="required-note">Required</span></label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <fieldset class="rating-field">
+                <legend>Overall Rating <span class="required-note">Required</span></legend>
+                <div class="rating-options">
+                    <div class="rating-option"><input id="rating-1" type="radio" name="rating" value="1"
+                            required /><label for="rating-1"><span aria-hidden="true">☆</span><span
+                                class="rating-caption">1 star</span></label></div>
+                    <div class="rating-option"><input id="rating-2" type="radio" name="rating" value="2"
+                            required /><label for="rating-2"><span aria-hidden="true">☆☆</span><span
+                                class="rating-caption">2 stars</span></label></div>
+                    <div class="rating-option"><input id="rating-3" type="radio" name="rating" value="3"
+                            required /><label for="rating-3"><span aria-hidden="true">☆☆☆</span><span
+                                class="rating-caption">3 stars</span></label></div>
+                    <div class="rating-option"><input id="rating-4" type="radio" name="rating" value="4"
+                            required /><label for="rating-4"><span aria-hidden="true">☆☆☆☆</span><span
+                                class="rating-caption">4 stars</span></label></div>
+                    <div class="rating-option"><input id="rating-5" type="radio" name="rating" value="5"
+                            required /><label for="rating-5"><span aria-hidden="true">☆☆☆☆☆</span><span
+                                class="rating-caption">5 stars</span></label></div>
+                </div>
+            </fieldset>
+
+            <div class="form-field">
+                <label for="installation-date">Date of Installation <span class="required-note">Required</span></label>
+                <input id="installation-date" type="date" name="installationDate" required />
+            </div>
+
+            <fieldset class="features-field">
+                <legend>Useful Features <span class="optional-note">Select all that apply</span></legend>
+                <div class="checkbox-options">
+                    <label class="check-option" for="feature-durability"><input id="feature-durability" type="checkbox"
+                            name="features" value="Durability" /> Durability</label>
+                    <label class="check-option" for="feature-ease"><input id="feature-ease" type="checkbox"
+                            name="features" value="Ease of use" /> Ease of use</label>
+                    <label class="check-option" for="feature-performance"><input id="feature-performance"
+                            type="checkbox" name="features" value="Performance" /> Performance</label>
+                    <label class="check-option" for="feature-design"><input id="feature-design" type="checkbox"
+                            name="features" value="Design" /> Design</label>
+                    <label class="check-option" for="feature-value"><input id="feature-value" type="checkbox"
+                            name="features" value="Value" /> Value</label>
+                </div>
+            </fieldset>
+
+            <div class="form-field">
+                <label for="written-review">Written Review <span class="optional-note">Optional</span></label>
+                <textarea id="written-review" name="review" rows="5"
+                    placeholder="What should other customers know?"></textarea>
+            </div>
+
+            <div class="form-field">
+                <label for="user-name">Your Name <span class="optional-note">Optional</span></label>
+                <input id="user-name" type="text" name="userName" autocomplete="name" />
+            </div>
+
+            <input class="submit-button" type="submit" value="Submit Review" />
+        </form>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> Crux Okolo | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
