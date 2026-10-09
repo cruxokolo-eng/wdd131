@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Use the Naija Atlas checklist and trip-interest form to start thinking through a visit to Nigeria.">
+    <meta name="author" content="Crux Okolo">
+    <meta name="theme-color" content="#175b43">
+    <title>Plan a visit | Naija Atlas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+    <script src="project.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Naija Atlas home">
+            <span class="brand-mark" aria-hidden="true">N</span>
+            <span>Naija <strong>Atlas</strong></span>
+        </a>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="places.html">Places</a>
+            <a href="culture.html">Culture</a>
+            <a href="visit.html" aria-current="page">Plan a visit</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="page-intro">
+            <p class="eyebrow">Start with a few good questions</p>
+            <h1>Make a little room for planning.</h1>
+            <p>A memorable trip starts with clear expectations. Use this checklist to shape your research, then tell us
+                what you would most like to explore.</p>
+        </section>
+
+        <section class="planning-layout">
+            <div class="planning-checklist">
+                <p class="eyebrow">Before you go</p>
+                <h2>A thoughtful trip checklist</h2>
+                <ol class="checklist">
+                    <li><strong>Check entry requirements.</strong> Confirm current visa and passport guidance with the
+                        relevant Nigerian authorities.</li>
+                    <li><strong>Ask about health preparation.</strong> Consult a qualified travel-health professional
+                        well ahead of departure.</li>
+                    <li><strong>Plan how you will get around.</strong> Research local transport, realistic travel times,
+                        and trusted local contacts.</li>
+                    <li><strong>Check current advice.</strong> Review recent official travel advisories for each place
+                        you hope to visit.</li>
+                    <li><strong>Leave room for local knowledge.</strong> Opening times and access can change; confirm
+                        details with hosts before traveling.</li>
+                </ol>
+                <p class="small-note">Naija Atlas is an educational project, not an official travel, medical, or
+                    booking service. Verify important decisions with current authoritative sources.</p>
+            </div>
+
+            <form class="interest-form" id="interest-form">
+                <p class="eyebrow">Your trip, your way</p>
+                <h2>What would you like to discover?</h2>
+                <p class="form-intro">Share a few interests to shape a sample trip idea.</p>
+                <label for="visitor-name">Your name</label>
+                <input id="visitor-name" name="name" type="text" autocomplete="name" minlength="2" required>
+
+                <label for="visitor-email">Email address</label>
+                <input id="visitor-email" name="email" type="email" autocomplete="email" required>
+
+                <fieldset>
+                    <legend>Choose one or more interests</legend>
+                    <label class="checkbox-label"><input type="checkbox" name="interests" value="nature"> Nature and
+                        landscapes</label>
+                    <label class="checkbox-label"><input type="checkbox" name="interests" value="cities"> Cities and
+                        food</label>
+                    <label class="checkbox-label"><input type="checkbox" name="interests" value="heritage"> Heritage
+                        and culture</label>
+                </fieldset>
+
+                <label for="travel-window">When might you travel?</label>
+                <select id="travel-window" name="travelWindow" required>
+                    <option value="">Choose a time frame</option>
+                    <option value="soon">In the next six months</option>
+                    <option value="later">More than six months from now</option>
+                    <option value="exploring">Just exploring ideas</option>
+                </select>
+
+                <label for="trip-notes">Anything else to keep in mind? <span class="optional">(optional)</span></label>
+                <textarea id="trip-notes" name="notes" rows="4" maxlength="300"
+                    placeholder="A region, experience, or question…"></textarea>
+
+                <button class="button button-dark" type="submit">Build my sample trip idea</button>
+                <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                <p class="privacy-note">This demonstration does not send or store your contact details. The form is for
+                    practicing trip ideas only.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true">N</span>
+            <span>Naija <strong>Atlas</strong></span>
+        </a>
+        <p>A welcoming starting point for exploring Nigeria.</p>
+        <div class="footer-links">
+            <a href="places.html">Explore places</a>
+            <a href="references.html">References &amp; image credits</a>
+        </div>
+        <p class="copyright">© <span data-current-year></span> Naija Atlas · WDD 131</p>
+    </footer>
+</body>
+
+</html>
